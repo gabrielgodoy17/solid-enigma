@@ -23,6 +23,24 @@ if sys.platform == 'win32':
 else:
     import termios
     import tty
+    if sys.platform == 'win32':
+    import msvcrt
+else:
+    import termios
+    import tty
+
+if sys.platform == 'win32':
+    import msvcrt
+else:
+    import termios
+    import tty
+
+if sys.platform == 'win32':
+    import msvcrt
+else:
+    import termios
+    import tty
+
 
 def saveTerminalSettings():
     if sys.platform == 'win32':
